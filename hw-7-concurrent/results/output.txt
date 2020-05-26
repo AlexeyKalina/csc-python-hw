@@ -1,0 +1,118 @@
+Утро (10:00-12:00):
+
+Спортивные новостные сайты:
+Средний UPH: 6.645
+
+championat.com: 11.777
+sports.ru: 10.935
+sportbox.ru: 10.515
+sport-express.ru: 10.094
+matchtv.ru: 8.832
+sovsport.ru: 5.467
+sport.ru: 2.944
+sport.bigmir.net: 2.944
+eurosport.ru: 1.682
+sportsdaily.ru: 1.261
+
+Спортивные рубрики глобальных новостных порталов:
+Средний UPH: 1.704
+
+gorobzor.ru: 5.047
+gazeta.ru: 4.626
+russian.rt.com: 4.206
+yandex.ru: 4.206
+regnum.ru: 3.364
+tass.ru: 3.364
+mail.ru: 2.523
+ria.ru: 1.682
+riafan.ru: 1.261
+rg.ru: 0.841
+lenta.ru: 0.841
+rambler.ru: 0.420
+aif.ru: 0.0
+svpressa.ru: 0.0
+mk.ru: 0.0
+iz.ru: 0.0
+ru.euronews.com: 0.0
+svoboda.org: 0.0
+pravda.ru: 0.0
+
+--------------------------
+День (14:00-16:00):
+
+Спортивные новостные сайты:
+Средний UPH: 8.428
+
+sportbox.ru: 18.729
+sports.ru: 13.221
+championat.com: 11.568
+sport-express.ru: 11.568
+matchtv.ru: 9.915
+sovsport.ru: 8.814
+sport.ru: 3.856
+sportsdaily.ru: 2.754
+sport.bigmir.net: 2.203
+eurosport.ru: 1.652
+
+Спортивные рубрики глобальных новостных порталов:
+Средний UPH: 1.855
+
+russian.rt.com: 9.364
+gazeta.ru: 5.508
+yandex.ru: 4.407
+regnum.ru: 3.856
+mail.ru: 2.203
+gorobzor.ru: 2.203
+tass.ru: 2.203
+riafan.ru: 1.652
+ria.ru: 1.652
+mk.ru: 1.101
+svpressa.ru: 0.550
+lenta.ru: 0.550
+aif.ru: 0.0
+iz.ru: 0.0
+rg.ru: 0.0
+pravda.ru: 0.0
+rambler.ru: 0.0
+ru.euronews.com: 0.0
+svoboda.org: 0.0
+
+--------------------------
+Вечер (21:00-23:00):
+
+Спортивные новостные сайты:
+Средний UPH: 7.061
+
+sportbox.ru: 14.891
+sports.ru: 12.970
+matchtv.ru: 11.048
+championat.com: 7.686
+sport-express.ru: 7.686
+sovsport.ru: 5.764
+sport.ru: 4.803
+sport.bigmir.net: 2.401
+eurosport.ru: 1.921
+sportsdaily.ru: 1.441
+
+Спортивные рубрики глобальных новостных порталов:
+Средний UPH: 1.744
+
+riafan.ru: 5.764
+russian.rt.com: 5.284
+yandex.ru: 4.803
+gazeta.ru: 4.323
+mail.ru: 2.882
+tass.ru: 2.401
+ria.ru: 2.401
+rambler.ru: 1.921
+mk.ru: 1.441
+iz.ru: 0.480
+ru.euronews.com: 0.480
+lenta.ru: 0.480
+rg.ru: 0.480
+svpressa.ru: 0.0
+regnum.ru: 0.0
+pravda.ru: 0.0
+gorobzor.ru: 0.0
+svoboda.org: 0.0
+aif.ru: 0.0

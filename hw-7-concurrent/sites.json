@@ -1,0 +1,205 @@
+[
+    {
+        "name": "sportbox.ru",
+        "url": "https://news.sportbox.ru/actual",
+        "is_sport_site": true,
+        "xpath": "//ul[contains(@class,'teazer-list')]",
+        "encoding": "utf-8"
+    },
+    {
+        "name": "championat.com",
+        "url": "https://www.championat.com/news/1.html",
+        "is_sport_site": true,
+        "xpath": "//div[contains(concat(' ', normalize-space(@class), ' '), ' news ')]//a[@class='news-item__title']",
+        "encoding": "utf-8"
+    },
+    {
+        "name": "sport-express.ru",
+        "url": "https://www.sport-express.ru/news/",
+        "is_sport_site": true,
+        "xpath": "//a[@class='se19-news-item__link']",
+        "encoding": "windows-1251"
+    },
+    {
+        "name": "sports.ru",
+        "url": "https://www.sports.ru/news/",
+        "is_sport_site": true,
+        "xpath": "//a[@class='short-text']",
+        "encoding": "utf-8"
+    },
+    {
+        "name": "eurosport.ru",
+        "url": "https://www.eurosport.ru",
+        "is_sport_site": true,
+        "xpath": "//div[contains(concat(' ', normalize-space(@class), ' '), ' storylist-latest-content ')]//div[contains(@class, 'storylist-latest__main-title')]",
+        "encoding": "utf-8"
+    },
+    {
+        "name": "sport.ru",
+        "url": "https://www.sport.ru/news/",
+        "is_sport_site": true,
+        "xpath": "//div[contains(@class, 'articles-list')]",
+        "encoding": "windows-1251"
+    },
+    {
+        "name": "sovsport.ru",
+        "url": "https://m.sovsport.ru",
+        "is_sport_site": true,
+        "xpath": "//div[contains(@class, 'sidebarNews')]",
+        "encoding": "utf-8"
+    },
+    {
+        "name": "sportsdaily.ru",
+        "url": "https://www.sportsdaily.ru/news",
+        "is_sport_site": true,
+        "xpath": "//div[@id='ud_column_1_2']",
+        "encoding": "utf-8"
+    },
+    {
+        "name": "matchtv.ru",
+        "url": "https://matchtv.ru/news",
+        "is_sport_site": true,
+        "xpath": "//div[contains(@class, '_MatchTVv4_Components2017_NodeShortListComponent')]",
+        "encoding": "utf-8"
+    },
+    {
+        "name": "sport.bigmir.net",
+        "url": "http://sport.bigmir.net",
+        "is_sport_site": true,
+        "xpath": "//a[@class='b-news-feed-list-item__title']",
+        "encoding": "windows-1251"
+    },
+    {
+        "name": "yandex.ru",
+        "url": "https://yandex.ru/sport",
+        "is_sport_site": false,
+        "xpath": "//article[contains(@class, 'card_theme_sport')]",
+        "encoding": "utf-8"
+    },
+    {
+        "name": "lenta.ru",
+        "url": "https://lenta.ru/rubrics/sport/",
+        "is_sport_site": false,
+        "xpath": "//section[contains(@class, 'b-longgrid-column')]",
+        "encoding": "utf-8"
+    },
+    {
+        "name": "gazeta.ru",
+        "url": "https://www.gazeta.ru/sport/news/",
+        "is_sport_site": false,
+        "xpath": "//div[@id='news_main_zone']",
+        "encoding": "windows-1251"
+    },
+    {
+        "name": "rambler.ru",
+        "url": "https://www.rambler.ru/sport/",
+        "is_sport_site": false,
+        "xpath": "//div[@data-cerber-head='sport::news::2']",
+        "encoding": "utf-8"
+    },
+    {
+        "name": "mail.ru",
+        "url": "https://sportmail.ru",
+        "is_sport_site": false,
+        "xpath": "//ul[@data-module='TrackBlocks']",
+        "encoding": "utf-8"
+    },
+    {
+        "name": "iz.ru",
+        "url": "https://iz.ru/rubric/sport",
+        "is_sport_site": false,
+        "xpath": "//div[contains(@class, 'views-infinite-scroll-content-wrapper')]",
+        "encoding": "utf-8"
+    },
+    {
+        "name": "tass.ru",
+        "url": "https://tass.ru/sport",
+        "is_sport_site": false,
+        "xpath": "//span[@class='text_size-23pt__3EvD_ text_color-black__3q9bA text_mobile-size-18pt__2cXcY text_align-left__1zyXV text_font-GOSTUI2__2ODBw']",
+        "encoding": "utf-8"
+    },
+    {
+        "name": "mk.ru",
+        "url": "https://www.mk.ru/sport/",
+        "is_sport_site": false,
+        "xpath": "//ul[contains(@class, 'big_listing')]",
+        "encoding": "utf-8"
+    },
+    {
+        "name": "russian.rt.com",
+        "url": "https://russian.rt.com/tag/sport",
+        "is_sport_site": false,
+        "xpath": "//div[contains(@class, 'card__summary_all-new_cover')]",
+        "encoding": "utf-8"
+    },
+    {
+        "name": "regnum.ru",
+        "url": "https://regnum.ru/news/sport.html",
+        "is_sport_site": false,
+        "xpath": "//div[@class='news-container']",
+        "encoding": "utf-8"
+    },
+    {
+        "name": "ria.ru",
+        "url": "https://rsport.ria.ru",
+        "is_sport_site": false,
+        "xpath": "//div[@data-block-position='5']",
+        "encoding": "utf-8"
+    },
+    {
+        "name": "svpressa.ru",
+        "url": "https://svpressa.ru/sport/",
+        "is_sport_site": false,
+        "xpath": "//div[@class='b-news']",
+        "encoding": "utf-8"
+    },
+    {
+        "name": "pravda.ru",
+        "url": "https://www.pravda.ru/sport/",
+        "is_sport_site": false,
+        "xpath": "//div[@data-tab='news-category']",
+        "encoding": "utf-8"
+    },
+    {
+        "name": "ru.euronews.com",
+        "url": "https://ru.euronews.com/news/sport",
+        "is_sport_site": false,
+        "xpath": "//div[@class='o-block-more-news-themes__articles']",
+        "encoding": "utf-8"
+    },
+    {
+        "name": "gorobzor.ru",
+        "url": "https://gorobzor.ru/novosti-sporta",
+        "is_sport_site": false,
+        "xpath": "//div[@class='c-news-dop__content']",
+        "encoding": "utf-8"
+    },
+    {
+        "name": "rg.ru",
+        "url": "https://rg.ru/tema/sport/",
+        "is_sport_site": false,
+        "xpath": "//div[@id='rgb_news-inner_loadarray']",
+        "encoding": "utf-8"
+    },
+    {
+        "name": "svoboda.org",
+        "url": "https://www.svoboda.org/z/16947",
+        "is_sport_site": false,
+        "xpath": "//div[@class='media-block-wrap']",
+        "encoding": "utf-8"
+    },
+    {
+        "name": "aif.ru",
+        "url": "https://aif.ru/sport",
+        "is_sport_site": false,
+        "xpath": "//div[@class='content']",
+        "encoding": "utf-8"
+    },
+    {
+        "name": "riafan.ru",
+        "url": "https://riafan.ru/category/sport",
+        "is_sport_site": false,
+        "xpath": "//div[@class='that-shiny-bg']",
+        "encoding": "utf-8"
+    }
+]
