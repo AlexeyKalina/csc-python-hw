@@ -1,0 +1,227 @@
+body {
+    font-family: Titillium Web, Arial, sans-serif;
+}
+
+.app {
+  margin: auto 12px;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 1024px) {
+  .app {
+      max-width: 600px;
+      margin: auto;
+  }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 16px;
+    position: relative;
+}
+
+.header_title {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu_item {
+    font-size: 24px;
+}
+
+main {
+    margin-top: 60px;
+}
+
+.password-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.password-block_password {
+    align-self: center;
+    text-align: center;
+    font-size: 24px;
+}
+
+.password-block_button {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.about_text {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    list-style: circle inside;
+}
+
+.options-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 60px;
+    text-align: center;
+}
+
+#options-form {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto 60px;
+    font-size: 18px;
+}
+
+.option {
+    border-top: 1px solid #dfdfdf;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.option_title {
+    border-top: 1px solid #dfdfdf;
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.option_number {
+    font-size: 14px;
+    width: 40px;
+}
+
+.option-checkbox {
+	 --background: #fff;
+	 --border: #d1d6ee;
+	 --border-hover: #bbc1e1;
+	 --border-active: #1e2235;
+	 --tick: #fff;
+	 width: 40px;
+	 padding-left: 20px;
+	 position: relative;
+}
+.option-checkbox svg {
+    padding-left: 20px;
+}
+
+.option-checkbox input, .option-checkbox svg {
+    padding-top: 10px;
+	 width: 21px;
+	 height: 21px;
+	 display: block;
+}
+.option-checkbox input {
+	 -webkit-appearance: none;
+	 -moz-appearance: none;
+	 position: relative;
+	 outline: none;
+	 background: var(--background);
+	 border: none;
+	 margin: 0;
+	 padding: 0;
+	 cursor: pointer;
+	 border-radius: 4px;
+	 transition: box-shadow 0.3s;
+	 box-shadow: inset 0 0 0 var(--s, 1px) var(--b, var(--border));
+}
+ .option-checkbox input:hover {
+	 --s: 2px;
+	 --b: var(--border-hover);
+}
+ .option-checkbox input:checked {
+	 --b: var(--border-active);
+}
+ .option-checkbox svg {
+	 pointer-events: none;
+	 fill: none;
+	 stroke-width: 2px;
+	 stroke-linecap: round;
+	 stroke-linejoin: round;
+	 stroke: var(--stroke, var(--border-active));
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 21px;
+	 height: 21px;
+	 transform: scale(var(--scale, 1)) translateZ(0);
+}
+ .option-checkbox.path input:checked {
+	 --s: 2px;
+	 transition-delay: 0.4s;
+}
+ .option-checkbox.path input:checked + svg {
+	 --a: 16.1 86.12;
+	 --o: 102.22;
+}
+ .option-checkbox.path svg {
+	 stroke-dasharray: var(--a, 86.12);
+	 stroke-dashoffset: var(--o, 86.12);
+	 transition: stroke-dasharray 0.6s, stroke-dashoffset 0.6s;
+}
+ .option-checkbox.bounce {
+	 --stroke: var(--tick);
+}
+ .option-checkbox.bounce input:checked {
+	 --s: 11px;
+}
+ .option-checkbox.bounce input:checked + svg {
+	 animation: bounce 0.4s linear forwards 0.2s;
+}
+ .option-checkbox.bounce svg {
+	 --scale: 0;
+}
+ @keyframes bounce {
+	 50% {
+		 transform: scale(1.2);
+	}
+	 75% {
+		 transform: scale(0.9);
+	}
+	 100% {
+		 transform: scale(1);
+	}
+}
+
+
+.stepper {
+  display: inline-block;
+  overflow: visible;
+    width: 60px;
+  height: 21px;
+  background: #fff;
+  padding-top: 10px;
+  margin-right: 10px;
+}
+
+.stepper input {
+  width: 20px;
+  height: 100%;
+  text-align: center;
+  border: 0;
+  background: transparent;
+  color: #000;
+  font-size: 14px;
+}
+
+.stepper button {
+  width: 14px;
+  font-weight: 700;
+  height: 100%;
+  text-align: center;
+  line-height: 0.1em;
+  font-size: 16px;
+  padding: 2px !important;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

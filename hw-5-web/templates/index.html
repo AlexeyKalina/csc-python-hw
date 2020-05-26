@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium%20Web">
+    <meta charset="UTF-8">
+    <title>Генератор паролей</title>
+</head>
+<body>
+    <div class="app">
+        {% block header %}
+            <header class="header">
+                <div class="header_title">
+                    <a href="/">Генератор паролей</a>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li class="menu_item">
+                            <a href="/about">Зачем?</a>
+                        </li>
+                    </ul>
+                </nav>
+        </header>
+        {% endblock %}
+        {% block main %}
+        <main>
+            <div class="password-block">
+                <input type="text" size="30" class="password-block_password"
+                value="{% if password %}{{ password }}{% endif %}"/>
+                <input type="image" form="options-form" class="password-block_button"
+                       src="https://img.icons8.com/metro/90/000000/refresh.png" alt="Generate">
+                <div class="password-block_checking-result"></div>
+            </div>
+            <div class="options-title">Настройки</div>
+            <form id="options-form" method="post">
+                <label for="length" class="option_title">Длина пароля:</label>
+                <div class="stepper option">
+                    <button type="button">−</button>
+                    <input name="length" id="length" type="number" value="{{ settings.length }}" min="0" max="100" step="1" readonly>
+                    <button type="button">+</button>
+                </div>
+                <label for="use_lowercase" class="option_title">a-z:</label>
+                <div class="option option-checkbox bounce">
+                    <input name="use_lowercase" id="use_lowercase" type="checkbox" {% if settings.use_lowercase %}checked{% endif %}>
+                    <svg viewBox="0 0 21 21">
+                        <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                    </svg>
+                </div>
+                <label for="use_uppercase" class="option_title">A-Z:</label>
+                <div class="option option-checkbox bounce">
+                    <input name="use_uppercase" id="use_uppercase" type="checkbox" {% if settings.use_uppercase %}checked{% endif %}>
+                    <svg viewBox="0 0 21 21">
+                        <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                    </svg>
+                </div>
+                <label for="use_numbers" class="option_title">0-9:</label>
+                <div class="option option-checkbox bounce">
+                    <input name="use_numbers" id="use_numbers" type="checkbox" {% if settings.use_numbers %}checked{% endif %}>
+                    <svg viewBox="0 0 21 21">
+                        <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                    </svg>
+                </div>
+                <label for="use_special" class="option_title">!@#$%^*()-+=</label>
+                <div class="option option-checkbox bounce">
+                    <input name="use_special" id="use_special" type="checkbox" {% if settings.use_special %}checked{% endif %}>
+                    <svg viewBox="0 0 21 21">
+                        <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                    </svg>
+                </div>
+                <label for="min_numbers" class="option_title">Минимум цифр:</label>
+                <div class="stepper option">
+                    <button type="button">−</button>
+                    <input name="min_numbers" id="min_numbers" type="number" value="{{ settings.min_numbers }}" min="0" max="100" step="1" readonly>
+                    <button type="button">+</button>
+                </div>
+                <label for="min_special" class="option_title">Минимум специальных символов:</label>
+                <div class="stepper option">
+                    <button type="button">−</button>
+                    <input name="min_special" id="min_special" type="number" value="{{ settings.min_special }}" min="0" max="100" step="1" readonly>
+                    <button type="button">+</button>
+                </div>
+            </form>
+        </main>
+        {% endblock %}
+    </div>
+</body>
+<script src=".{{ url_for('static', filename='scripts/stepper.js') }}"></script>
+</html>
