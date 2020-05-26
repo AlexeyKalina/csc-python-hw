@@ -1,0 +1,280 @@
+{
+    "patterns": [
+        "who how action_who currency action_who:prep number when",
+        "currency how action_currency number when",
+        "currency when tire who how action_who currency action_who:prep number"
+    ],
+    "ending": [
+        "Ситуация продолжает оставаться нестабильной.",
+        "Что будет дальше?",
+        "Сложно сказать, как будет развиваться ситуация в дальнейшем.",
+        "Продолжаем наблюдать за рублем.",
+        "Продолжаем держать в курсе событий.",
+        "Следим дальше за ситуацией с рублем.",
+        "Ситуация с рублем по-прежнему нестабильна.",
+        "Прожолжайте следить за новостями.",
+        "Какие изменения нас ждут дальше?",
+        "Как изменится курс доллара и евро в ближайшее время?",
+        "Насколько может измениться ситуация в ближайшее время?",
+        "Продолжаем информировать Вас обо всех тизменениях.", 
+        "Не переключайтесь, дальше - больше.",
+        "Любим Вас, оставайтесь с нами!"
+    ],
+    "dict": {
+        "who": {
+            "variants": [
+                "ЦБ",
+                "ЦБ РФ",
+                "ЦБ России",
+                "Банк России",
+                "Банк РФ",
+                "Центробанк",
+                "Центробанк России",
+                "Центробанк РФ",
+                "Центральный банк",
+                "Центральный банк России",
+                "Центральный банк РФ"
+            ],
+            "type": "DEFAULT",
+            "optional": false
+        },
+        "how": {
+            "type": "DEFAULT",
+            "variants": [ "резко", "неожиданно", "внезапно" ],
+            "optional": true
+        },
+        "currency": {
+            "type": "CURRENCY",
+            "variants": [
+                { 
+                    "text": "курс доллара",
+                    "type": "DOLLAR"
+                },
+                {
+                    "text": "официальный курс доллара",
+                    "type": "DOLLAR"
+                },
+                {
+                    "text": "доллар",
+                    "type": "DOLLAR"
+                },
+                { 
+                    "text": "курс евро",
+                    "type": "EURO"
+                },
+                {
+                    "text": "официальный курс евро",
+                    "type": "EURO"
+                },
+                {
+                    "text": "евро",
+                    "type": "EURO"
+                }
+            ],
+            "optional": false            
+        },
+        "action_currency": {
+            "type": "ACTION",
+            "variants": [
+                {
+                    "text": "снизился на",
+                    "direction": "DOWN",
+                    "type": "DIFF"
+                },
+                {
+                    "text": "снизился до",
+                    "direction": "DOWN",
+                    "type": "EXACT"
+                },
+                {
+                    "text": "опустился на",
+                    "direction": "DOWN",
+                    "type": "DIFF"
+                },
+                {
+                    "text": "опустился до",
+                    "direction": "DOWN",
+                    "type": "EXACT"
+                },
+                {
+                    "text": "возрос на",
+                    "direction": "UP",
+                    "type": "DIFF"
+                },
+                {
+                    "text": "возрос до",
+                    "direction": "UP",
+                    "type": "EXACT"
+                },
+                {
+                    "text": "упал на",
+                    "direction": "DOWN",
+                    "type": "DIFF"
+                },
+                {
+                    "text": "упал до",
+                    "direction": "DOWN",
+                    "type": "EXACT"
+                },
+                {
+                    "text": "вырос на",
+                    "direction": "UP",
+                    "type": "DIFF"
+                },
+                {
+                    "text": "вырос до",
+                    "direction": "UP",
+                    "type": "EXACT"
+                },
+                {
+                    "text": "повысился на",
+                    "direction": "UP",
+                    "type": "DIFF"
+                },
+                {
+                    "text": "повысился до",
+                    "direction": "UP",
+                    "type": "EXACT"
+                },
+                {
+                    "text": "взлетел на",
+                    "direction": "UP",
+                    "type": "DIFF"
+                },
+                {
+                    "text": "взлетел до",
+                    "direction": "UP",
+                    "type": "EXACT"
+                },
+                {
+                    "text": "поднялся на",
+                    "direction": "UP",
+                    "type": "DIFF"
+                },
+                {
+                    "text": "поднялся до",
+                    "direction": "UP",
+                    "type": "EXACT"
+                },
+                {
+                    "text": "подскочил на",
+                    "direction": "UP",
+                    "type": "DIFF"
+                },
+                {
+                    "text": "подскочил до",
+                    "direction": "UP",
+                    "type": "EXACT"
+                },
+                {
+                    "text": "увеличился на",
+                    "direction": "UP",
+                    "type": "DIFF"
+                },
+                {
+                    "text": "увеличился до",
+                    "direction": "UP",
+                    "type": "EXACT"
+                },
+                {
+                    "text": "превысил",
+                    "direction": "UP",
+                    "type": "EXACT"
+                },
+                {
+                    "text": "достиг отметки в",
+                    "direction": "NO",
+                    "type": "EXACT"
+                },
+                {
+                    "text": "составил",
+                    "direction": "NO",
+                    "type": "EXACT"
+                }
+            ]
+        },
+        "action_who": {
+            "type": "ACTION",
+            "variants": [
+                {
+                    "text": "снизил",
+                    "direction": "DOWN",
+                    "type": "DIFF",
+                    "prep": "на"
+                },
+                {
+                    "text": "снизил",
+                    "direction": "DOWN",
+                    "type": "EXACT",
+                    "prep": "до"
+                },
+                {
+                    "text": "опустил",
+                    "direction": "DOWN",
+                    "type": "DIFF",
+                    "prep": "на"
+                },
+                {
+                    "text": "опустил",
+                    "direction": "DOWN",
+                    "type": "EXACT",
+                    "prep": "до"
+                },
+                {
+                    "text": "поднял",
+                    "direction": "UP",
+                    "type": "DIFF",
+                    "prep": "на"
+                },
+                {
+                    "text": "поднял",
+                    "direction": "UP",
+                    "type": "EXACT",
+                    "prep": "до"
+                },
+                {
+                    "text": "повысил",
+                    "direction": "UP",
+                    "type": "DIFF",
+                    "prep": "на"
+                },
+                {
+                    "text": "повысил",
+                    "direction": "UP",
+                    "type": "EXACT",
+                    "prep": "до"
+                },
+                {
+                    "text": "довел",
+                    "direction": "NO",
+                    "type": "EXACT",
+                    "prep": "до"
+                },
+                {
+                    "text": "установил",
+                    "direction": "NO",
+                    "type": "EXACT",
+                    "prep": "равным"
+                }
+            ]
+        },
+        "when": {
+            "type": "DEFAULT",
+            "variants": [
+                "за последний день",
+                "за последние сутки",
+                "за сутки",
+                "за день"
+            ],
+            "optional": true  
+        },
+        "number": {
+            "type": "NUMBER"
+        },
+        "tire": {
+            "type": "DEFAULT",
+            "variants": [ "-" ],
+            "optional": false 
+        }
+    }
+}
